@@ -1,0 +1,4 @@
+  roi_dicts:
+  - name: body
+    mask_channel: 0
+    use_fuzzy_match: True

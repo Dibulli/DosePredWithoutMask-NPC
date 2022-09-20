@@ -1,0 +1,71 @@
+  roi_dicts:
+  - name: Patient
+    mask_channel: 0
+    use_fuzzy_match: True
+
+  - name: PGTVnx
+    mask_channel: 1
+    use_fuzzy_match: True
+
+  - name: PGTVnd
+    mask_channel: 2
+    use_fuzzy_match: True
+
+  - name: PTV1
+    mask_channel: 3
+    use_fuzzy_match: True
+
+  - name: PTV2
+    mask_channel: 4
+    use_fuzzy_match: True
+
+  - name: Brain Stem
+    mask_channel: 5
+    use_fuzzy_match: True
+
+  - name: Cord
+    mask_channel: 6
+    use_fuzzy_match: True
+
+  - name: Parotid_L
+    mask_channel: 7
+    use_fuzzy_match: True
+
+  - name: Parotid_R
+    mask_channel: 8
+    use_fuzzy_match: True
+
+  - name: Optic Chiasm
+    mask_channel: 9
+    use_fuzzy_match: True
+
+  - name: Optic Nerve_L
+    mask_channel: 10
+    use_fuzzy_match: True
+
+  - name: Optic Nerve_R
+    mask_channel: 11
+    use_fuzzy_match: True
+
+  - name: Len_L
+    mask_channel: 12
+    use_fuzzy_match: True
+
+  - name: Len_R
+    mask_channel: 13
+    use_fuzzy_match: True
+
+  - name: Eye_L
+    mask_channel: 14
+    use_fuzzy_match: True
+
+  - name: Eye_R
+    mask_channel: 15
+    use_fuzzy_match: True
+
+  - name: Larynx
+    mask_channel: 16
+    use_fuzzy_match: True
+
+
+

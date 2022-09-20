@@ -1,0 +1,8 @@
+dicom_path: /Users/mr.chai/Data/npc_fd/ptv70/20170506/20170626___PINNAPP4___499339
+#dicom_path: /Users/mr.chai/Data/NPC validation/20170703___PINNAPP3___RT000495
+
+train_path: ./data/training/
+test_path: ./data/test/
+validation_path: ./data/validation/
+glance_img_path: ./data/check_img/
+check_img_path: ./data/check_img/

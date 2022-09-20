@@ -1,0 +1,19 @@
+defaults:
+  - hydra/job_logging: colorlog
+  - hydra/hydra_logging: colorlog
+  - dataset_generation: thread1_conf
+  - dataset_training: common_conf
+  - device: cpu
+  - glance_checking: common_conf
+  - image_dim: ct_1024
+  - image_normalization: ct_fix
+  - path: relative
+  - roi_conf: npc_zy
+  - train_conf: seg_task_16g_1080
+
+continue_train: False
+model_file_path: ../model/npc_dose_prediction.pth
+model_type: segformer
+
+predict_dicom_path: /Users/mr.chai/Data/NPC_by_szh/2200275655_imrt
+dose_output_path: ./dose_output

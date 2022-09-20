@@ -1,0 +1,46 @@
+defaults:
+  - hydra/job_logging: colorlog
+  - hydra/hydra_logging: colorlog
+  - dataset_generation: common_conf
+  - dataset_training: common_conf
+  - device: gpu0
+  - glance_checking: common_conf
+  - image_dim: ct_512
+  - image_normalization: ct_fix
+  # - path: relative
+  - roi_conf: npc
+  - train_conf: seg_task_64g_2080ti
+
+continue_train: False
+model_file_path: ../model/npc_dose_prediction.pth
+
+# hydra:
+#   verbose: True
+
+dicom_path: /mnt/sdb/data/raw_dicom
+train_path: /home/varian/dose_prediction/train
+validation_path: /home/varian/dose_prediction/validation
+test_path: /home/varian/dose_prediction/testing
+test_out_path: /home/varian/dose_prediction/testing_out
+glance_img_path: /home/varian/dose_prediction/check_img
+check_img_path: /home/varian/dose_prediction/check
+
+predict_dicom_path: /
+dose_outpu_path: /
+
+use_adaptive_roi_weight: False
+model_type: segformer
+
+lr_flip: True
+loss: dice_loss
+learn_rate: 1e-04
+weight_decay: 5e-7
+batch_size: 3
+do_validation: True
+epochs: 300
+lr_decay_rate: 0.1
+lr_decay_epoch: 150
+save_period: 1
+train_loader_works: 3
+validation_load_works: 3
+optimizer: RMSprop

@@ -1,0 +1,5 @@
+equal_pt_weight: False
+sample_per_pt: 100
+channels_of_input_images: 1
+channels_of_input_masks: 17
+channels_of_output_mask: 1
